@@ -1,11 +1,9 @@
 # Data Science Modules Website
 ___
 
-Designed and developed by Tony Zhao @([tonyzhao.org](http://tonyzhao.org))
-
 * Running on Jekyll
 	- <https://jekyllrb.com/>
-* Designed using Bootstrap 4 
+* Designed using Bootstrap 4
 	- <https://getbootstrap.com/>
 * Base theme is Litera by Bootswatch
 	- <https://bootswatch.com/litera/>
@@ -56,7 +54,7 @@ These individual blocks are found in the `_featured` folder in the root director
 
 These files have fields in the front-matter (header) which exhaustively include `title`,`course_name`,`instructor`,`github_link`, `datahub_link`,`nbviewer_link`, `binder_link`. The links should (obviously) be links (`https://example.com`). Any field can be left blank. It just won't show up. The buttons will still be rendered correctly, just no longer having the missing fields.
 
-The content of the file below the header should be the description of the module. This section DOES NOT support markdown, and will simply render in plain-text. 
+The content of the file below the header should be the description of the module. This section DOES NOT support markdown, and will simply render in plain-text.
 
 ## Guide page
 
@@ -78,12 +76,17 @@ Again, very similar to the Guide and Library pages, the corresponding file (`abo
 
 Jekyll is a framework in the Ruby programming language that allows highly readable markdown to be rendered in nice looking (but not so readable) web pages built in HTML/CSS. It does this by taking markdown files (files with the extension`.md`), and formatting them into our HTML templates in the `_layouts` folder.
 
-You may notice that the markdown files have a header that starts and ends with three dashes (`---`). This is called the front-matter and holds a bunch of variables. The stuff below the header is called the content. This is the main part of the page and is usually, but not always, rendered in markdown. 
+You may notice that the markdown files have a header that starts and ends with three dashes (`---`). This is called the front-matter and holds a bunch of variables. The stuff below the header is called the content. This is the main part of the page and is usually, but not always, rendered in markdown.
 
-Github pages reads from the `docs` folder located at the root directory of the `master` branch. Anything in this folder is reachable via the website. 
+Github pages reads from the `docs` folder located at the root directory of the `master` branch. Anything in this folder is reachable via the website.
 
 Jekyll regenerates and builds the files in `docs` from the `.md` files when you run `jekyll build` or `jekyll serve` in the command line. Treat `docs` folder as unstable, as any changes made in here will be overwritten and replaced with Jekyll's rendering of the markdown files.
 
 ## Misc
 
 The header, navbar, and footer templates are located in the `_includes` folder. All static resources (JavaScript, images, custom CSS) is located in the `static` folder. The `old_site` folder includes all the resources that was the original DSEP Modules website. Finally `Gemfile` and `Gemfile.lock` are simply there so that Jekyll can do its job.
+
+## Attribution
+
+Based on jekyll github pages designed and developed by Tony Zhao @([tonyzhao.org](http://tonyzhao.org))
+And so grateful to all the original work by Chris Hench @ D-Lab
