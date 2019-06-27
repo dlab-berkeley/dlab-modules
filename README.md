@@ -29,6 +29,13 @@ DO NOT CHANGE THE `docs` FOLDER: It holds the `.html` files for the site, but an
 
 Make sure you have installed [Jekyll](https://jekyllrb.com/docs/installation/) in order to run Jekyll commands in the terminal.
 
+To run the site locally using Docker (rather than installing ruby and jekyll on your computer directly), use:
+
+```
+docker build -t dlab-modules "$PWD"
+docker run -d -p 4000:4000 --name dlab-modules -v "$PWD":/srv/jekyll dlab-modules
+```
+
 After making edits to the `.md` files, run `jekyll serve` to host the site locally and see what the changes look like on the site by visiting [http://localhost:4000/](http://localhost:4000/). This command will also rebuild and overwrite the `docs` folder with the new content. If the changes are to be pushed onto the live site, simply stage and and commit everything (including the changes in the `docs` folder MADE BY JEKYLL), and push to `origin master`. In other words, to deploy your changes, on the command line run
 
 ```

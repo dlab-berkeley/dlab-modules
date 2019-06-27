@@ -2,11 +2,11 @@
 # Variables here affect the entire site and NOT individual pages
 # It's unlikely that this file will need to be edited often
 
-facebook: https://www.facebook.com/UCBdatascience/
-instagram: https://www.instagram.com/berkeleydatasci/?hl=en
-github: https://github.com/ds-modules
-email: dspi@berkeley.edu
-footer_text: Copyright © 2018 Data Science Education Program @ UC Berkeley. All rights reserved.
+website: https://dlab.berkeley.edu/
+facebook: https://www.facebook.com/DLabAtBerkeley/
+github: https://github.com/dlab-berkeley/
+email: dlab@berkeley.edu
+footer_text: Copyright © 2019 D-Lab @ UC Berkeley. All rights reserved.
 
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -17,9 +17,9 @@ footer_text: Copyright © 2018 Data Science Education Program @ UC Berkeley. All
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Data Science Modules
+title: D-Lab Workshops
 description: >- # this means to ignore newlines
-  The official website for all of the modules developed by the Data Science Education Program.
+  The official website for all of the workshop course material developed by D-Lab.
 permalink: pretty
 
 # DO NOT CHANGE THE DESTINATION
@@ -37,4 +37,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - old_site
+  - Dockerfile
