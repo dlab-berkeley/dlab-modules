@@ -1,4 +1,6 @@
 # Data Science Modules Website
+
+View live version: https://dlab-berkeley.github.io/dlab-modules/
 ___
 
 * Running on Jekyll
